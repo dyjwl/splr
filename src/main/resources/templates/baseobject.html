@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+<h1>Thymeleaf模板引擎</h1>
+<h3>基本对象</h3>
+<p th:text="${#request.getAttribute('request')}"></p>
+<p th:text="${#session.getAttribute('session')}"></p>
+<p th:text="${#servletContext.getAttribute('servletContext')}"></p>
+</body>
+</html>

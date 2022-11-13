@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Layout</title>
+    </head>
+    <body style="margin: 0px;">
+        <div>
+            <div th:replace="layout/header :: header"></div>
+            <div th:replace="layout/left :: left"></div>
+            <div th:replace="layout/footer :: footer"></div>
+        </div>
+    </body>
+</html>

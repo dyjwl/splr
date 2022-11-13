@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+<h1>Thymeleaf模板引擎</h1>
+<h3>条件判断</h3>
+<a th:if="${flag == 'yes'}" th:href="@{http://www.a.com/}">a.home</a>
+<a th:unless="${flag != 'no'}" th:href="@{http://www.b.com/}" >b.home</a>
+</body>
+</html>

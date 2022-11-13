@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Example switch </title>
+</head>
+<body>
+<h1>Thymeleaf模板引擎</h1>
+<h3>each 循环遍历</h3>
+<div >
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>密码</th>
+            <th>变量：index</th>
+            <th>变量：count</th>
+            <th>变量：size</th>
+            <th>变量：even</th>
+            <th>变量：odd</th>
+            <th>变量：first</th>
+            <th>变量：last</th>
+        </tr>
+        <tr th:each="user,iterStat : ${users}">
+            <td th:text="${user.name}">name</td>
+            <td th:text="${user.age}">age</td>
+            <td th:text="${user.password}">password</td>
+            <td th:text="${iterStat.index}">index</td>
+            <td th:text="${iterStat.count}">count</td>
+            <td th:text="${iterStat.size}">size</td>
+            <td th:text="${iterStat.even}">even</td>
+            <td th:text="${iterStat.odd}">odd</td>
+            <td th:text="${iterStat.first}">first</td>
+            <td th:text="${iterStat.last}">last</td>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>

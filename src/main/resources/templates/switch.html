@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Example switch </title>
+</head>
+<body>
+<h1>Thymeleaf模板引擎</h1>
+<h3>switch</h3>
+<div >
+    <div th:switch="${status}">
+        <p th:case="'todo'">未开始</p>
+        <p th:case="'doing'">进行中</p>
+        <p th:case="'done'">完成</p>
+        <!-- *: case的默认的选项 -->
+        <p th:case="*">状态错误</p>
+    </div>
+</div>
+</body>
+</html>
