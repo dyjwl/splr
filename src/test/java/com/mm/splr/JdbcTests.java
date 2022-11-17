@@ -31,7 +31,7 @@ class JdbcTests {
         List<Map<String, Object>> list = jdbcTemplate.queryForList("select * from student ");
         System.out.println(list.size());
         Assert.assertNotNull(list);
-        Assert.assertEquals(6,list.size());
+        Assert.assertEquals(7,list.size());
     }
 
     @Test
